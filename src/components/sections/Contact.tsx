@@ -233,7 +233,7 @@ export function Contact() {
         <ScrollReveal delay={0.4}>
           <div className="mt-24 pt-8 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="font-mono text-xs text-[var(--color-text-muted)]">
-              Built with Next.js · Tailwind CSS · Framer Motion
+              Built with Next.js · Tailwind CSS
             </p>
             <p className="font-mono text-xs text-[var(--color-text-muted)]">
               © {new Date().getFullYear()} Jai Patel
