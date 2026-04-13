@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const EMAIL = "jai.a.patel@torontomu.ca";
+const RESUME_HREF = "/resume.pdf";
 
 const externalLinks = [
   {
@@ -24,6 +25,20 @@ function ArrowRight() {
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
       <path
         d="M2.917 7h8.166M7.583 4l3.5 3-3.5 3"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function DownloadIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
+      <path
+        d="M7 2v7M4 6.5l3 3 3-3M2.5 11h9"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
@@ -133,13 +148,38 @@ function EmailRow() {
   );
 }
 
+function ResumeRow() {
+  return (
+    <ScrollReveal delay={0.3}>
+      <a
+        href="https://drive.google.com/file/d/1KHiqIUCb5earLVYsS0aJXyp2Wp4uO_QF/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex items-center justify-between p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-accent)] hover:bg-[var(--color-surface-2)] transition-colors"
+      >
+        <div className="flex items-center gap-4">
+          <span className="font-mono text-xs text-[var(--color-text-muted)] uppercase tracking-wider w-16">
+            Resume
+          </span>
+          <span className="text-sm text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+            Jai_Patel_Resume.pdf
+          </span>
+        </div>
+        <span className="text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
+          <DownloadIcon />
+        </span>
+      </a>
+    </ScrollReveal>
+  );
+}
+
 export function Contact() {
   return (
     <section id="contact" className="py-16 px-6">
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-            04 — Contact
+            05 — Contact
           </p>
         </ScrollReveal>
 
@@ -185,10 +225,12 @@ export function Contact() {
               </a>
             </ScrollReveal>
           ))}
+
+          <ResumeRow />
         </div>
 
         {/* Footer */}
-        <ScrollReveal delay={0.35}>
+        <ScrollReveal delay={0.4}>
           <div className="mt-24 pt-8 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="font-mono text-xs text-[var(--color-text-muted)]">
               Built with Next.js · Tailwind CSS · Framer Motion

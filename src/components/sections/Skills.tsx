@@ -44,7 +44,7 @@ export function Skills() {
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-            03 — Skills
+            04 — Skills
           </p>
         </ScrollReveal>
 

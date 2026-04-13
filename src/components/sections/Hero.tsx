@@ -69,10 +69,12 @@ function MagneticButton({
   children,
   href,
   className,
+  target,
 }: {
   children: React.ReactNode;
   href: string;
   className: string;
+  target?: string;
 }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const x = useMotionValue(0);
@@ -97,6 +99,8 @@ function MagneticButton({
     <motion.a
       ref={ref}
       href={href}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className={className}
       style={{ x: springX, y: springY }}
       onMouseMove={onMouseMove}
@@ -259,7 +263,7 @@ export function Hero() {
                 borderColor: "rgba(129,140,248,0.3)",
               }}
             >
-              Available for internships · Summer / Fall 2025
+              Available for internships · Summer / Fall 2026
             </span>
           </motion.div>
 
@@ -286,7 +290,7 @@ export function Hero() {
             variants={item}
             className="text-base sm:text-lg text-[var(--color-text-muted)] max-w-lg mb-10 leading-relaxed"
           >
-            Building production-grade software — from voice AI SaaS to
+            Building production-grade software, from AI SaaS to
             athlete performance platforms. I ship things that work.
           </motion.p>
 
@@ -309,10 +313,20 @@ export function Hero() {
             </MagneticButton>
 
             <MagneticButton
-              href="#contact"
+              href="https://drive.google.com/file/d/1KHiqIUCb5earLVYsS0aJXyp2Wp4uO_QF/view?usp=sharing"
+              target="_blank"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[var(--color-border)] text-[var(--color-text-secondary)] text-sm font-medium cursor-pointer hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              Contact
+              Resume
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M7 2v7M4 6.5l3 3 3-3M2.5 11h9"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </MagneticButton>
           </motion.div>
         </div>

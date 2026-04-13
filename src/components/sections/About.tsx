@@ -18,9 +18,9 @@ const currently = [
   {
     type: "building",
     items: [
-      "Belvoro — Voice AI for car dealerships",
-      "Aaron Performance — athlete training platform",
-      "This portfolio",
+      "Belvoro - AI receptionist for any business",
+      "TMU Webring - Webring for TMU students",
+      "SHHH 🤫 - Secret project",
     ],
   },
 ];
@@ -104,7 +104,7 @@ export function About() {
             <p>
               I&apos;m a second-year Computer Engineering student at Toronto
               Metropolitan University, focused on building software people
-              actually use. My work spans the full stack — React Native
+              actually use. My work spans the full stack, including React Native
               mobile apps, Next.js web platforms, Python AI pipelines, and
               microcontroller firmware.
             </p>
@@ -112,7 +112,7 @@ export function About() {
               I&apos;ve shipped production software in both startup and
               freelance contexts. I care about the craft: clean architecture,
               readable code, fast iteration. Currently seeking software
-              engineering internships for Summer/Fall 2025.
+              engineering internships for Summer/Fall 2026.
             </p>
           </div>
         </ScrollReveal>
@@ -123,7 +123,7 @@ export function About() {
             <AnimatedStat isText textValue="2nd" label="Year" />
             <AnimatedStat isText textValue="CompE" label="Program" />
             <AnimatedStat isText textValue="TMU" label="School" />
-            <AnimatedStat value={2} suffix="+" label="Live products" />
+            <AnimatedStat value={4} suffix="+" label="Live products" />
             <AnimatedStat value={3} suffix="+" label="Years coding" />
           </div>
         </ScrollReveal>

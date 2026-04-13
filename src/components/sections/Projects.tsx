@@ -17,22 +17,21 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Belvoro",
-    tagline: "Voice AI for car dealerships",
+    name: " Webring",
+    tagline: "Webring for TMU students",
     description:
-      "SaaS platform deploying AI voice agents to handle inbound dealership calls — appointment booking, lead qualification, follow-ups — using Retell AI for real-time voice synthesis and Supabase for CRM data.",
-    tags: ["Next.js", "Retell AI", "Supabase", "TypeScript", "Stripe"],
-    status: "Live",
-    image: "/belvoro.avif",
-    links: [{ label: "belvoroai.com", href: "https://belvoroai.com" }],
+      "Open-source portfolio network for TMU students. Submit your site, get listed in the directory, and join a ring of student developers and designers, making student work discoverable beyond LinkedIn.",
+    tags: ["Remix", "TypeScript", "SQLite", "Fly.io"],
+    status: "In Progress",
+    image: "/webring.jpg",
   },
   {
     name: "Gos Training System",
     tagline: "Athlete training platform",
     description:
-      "Full-stack training app for strength & conditioning coaches. Coaches build and assign programs; athletes track workouts on mobile. React Native iOS/Android + Next.js web admin, backed by Supabase.",
+      "Custom coaching platform built for a real trainer client. Coaches design and assign progressive programs; athletes log sessions on iOS/Android. Built with React Native + Expo, Next.js 15 web admin, Supabase for auth and data, and Stripe for billing.",
     tags: ["React Native", "Next.js", "Supabase", "Expo", "TypeScript"],
-    status: "In Progress",
+    status: "Live",
     image: "/gts.jpg",
     links: [],
   },
@@ -40,9 +39,9 @@ const projects: Project[] = [
     name: "Cortex",
     tagline: "AI study assistant w/ RAG",
     description:
-      "Upload your lecture slides and Cortex builds a searchable knowledge base using a RAG pipeline. Ask questions in natural language and get answers grounded in your own course material — not hallucinations.",
+      "Upload your lecture slides and Cortex builds a searchable knowledge base using a RAG pipeline. Ask questions in natural language and get answers grounded in your own course material.",
     tags: ["Python", "LangChain", "Next.js", "OpenAI", "Pinecone", "FastAPI"],
-    status: "In Progress",
+    status: "Live",
     image: "/cortex.webp",
     links: [],
   },
@@ -50,7 +49,7 @@ const projects: Project[] = [
     name: "VoltBoard",
     tagline: "Real-time IoT sensor dashboard",
     description:
-      "STM32 microcontroller streams temperature, humidity, and voltage readings over MQTT. A Node.js broker fans the data out to a React dashboard with live charts — sub-100ms latency from sensor to screen.",
+      "STM32 microcontroller streams temperature, humidity, and voltage readings over MQTT. A Node.js broker fans the data out to a React dashboard with live charts, with sub-100ms latency from sensor to screen.",
     tags: ["C++", "FreeRTOS", "MQTT", "Node.js", "React", "WebSockets"],
     status: "In Progress",
     image: "/circuit.avif",
@@ -207,7 +206,7 @@ export function Projects() {
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-            02 — Projects
+            03 — Projects
           </p>
         </ScrollReveal>
 
