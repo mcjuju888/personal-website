@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,11 +20,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Jai — Software Engineer",
+  title: "Jai — Software Engineer", 
   description:
     "Computer Engineering student at TMU building full-stack products, AI systems, and embedded interfaces. Actively seeking software engineering internships.",
   openGraph: {
-    title: "Jai — Software Engineer",
+    title: "Jai Patel",
     description:
       "Full-stack & AI/ML engineer. Toronto Metropolitan University, CE '29.",
     type: "website",
@@ -40,7 +41,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

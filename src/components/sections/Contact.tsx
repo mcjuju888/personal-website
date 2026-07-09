@@ -231,13 +231,23 @@ export function Contact() {
 
         {/* Footer */}
         <ScrollReveal delay={0.4}>
-          <div className="mt-24 pt-8 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="font-mono text-xs text-[var(--color-text-muted)]">
-              Built with Next.js · Tailwind CSS
-            </p>
-            <p className="font-mono text-xs text-[var(--color-text-muted)]">
-              © {new Date().getFullYear()} Jai Patel
-            </p>
+          <div className="mt-24 pt-8 border-t border-[var(--color-border)] flex flex-col gap-4">
+            <iframe
+              src="https://tmu-webring.fly.dev/badge/1"
+              width="160"
+              height="40"
+              allowTransparency={true}
+              style={{ border: "none", background: "transparent" }}
+              title="TMU Webring"
+            />
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <p className="font-mono text-xs text-[var(--color-text-muted)]">
+                Built with Next.js · Tailwind CSS
+              </p>
+              <p className="font-mono text-xs text-[var(--color-text-muted)]">
+                © {new Date().getFullYear()} Jai Patel
+              </p>
+            </div>
           </div>
         </ScrollReveal>
       </div>

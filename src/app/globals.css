@@ -70,6 +70,52 @@ body {
   background-clip: text;
 }
 
+/* ---------- terminal ---------- */
+
+@keyframes term-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.term-cursor {
+  color: var(--color-accent);
+  animation: term-blink 1.1s steps(1) infinite;
+}
+
+@keyframes term-reveal {
+  to { opacity: 1; }
+}
+
+.term-line {
+  opacity: 0;
+  animation: term-reveal 0.05s steps(1) forwards;
+}
+
+@keyframes term-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.term-pop {
+  animation: term-pop 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.term-scanlines {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.12) 3px
+  );
+  mix-blend-mode: multiply;
+}
+
 @utility tag-pill {
   display: inline-flex;
   align-items: center;
