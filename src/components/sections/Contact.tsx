@@ -152,7 +152,7 @@ function ResumeRow() {
   return (
     <ScrollReveal delay={0.3}>
       <a
-        href="https://drive.google.com/file/d/1KHiqIUCb5earLVYsS0aJXyp2Wp4uO_QF/view?usp=sharing"
+        href={RESUME_HREF}
         target="_blank"
         rel="noopener noreferrer"
         className="group flex items-center justify-between p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-accent)] hover:bg-[var(--color-surface-2)] transition-colors"

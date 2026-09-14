@@ -313,7 +313,7 @@ export function Hero() {
             </MagneticButton>
 
             <MagneticButton
-              href="https://drive.google.com/file/d/1KHiqIUCb5earLVYsS0aJXyp2Wp4uO_QF/view?usp=sharing"
+              href="/resume.pdf"
               target="_blank"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[var(--color-border)] text-[var(--color-text-secondary)] text-sm font-medium cursor-pointer hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >

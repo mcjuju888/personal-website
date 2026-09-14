@@ -24,7 +24,7 @@ const jobs = [
     period: "May 2025 – Sept 2025",
     location: "Miami",
     description:
-      "Developed an AI-driven product analytics start-up backed by Telora ($60K). Built an end-to-end ingestion pipeline and a LangChain-powered engine that turns analytics into deployable UI/UX changes.",
+      "Developed an AI-driven product analytics start-up backed with $60K in funding. Built an end-to-end ingestion pipeline and a LangChain-powered engine that turns analytics into deployable UI/UX changes.",
     tags: ["Python", "AWS", "PostgreSQL", "LangChain"],
   },
   {

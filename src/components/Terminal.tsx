@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 
 const EMAIL = "jai.a.patel@torontomu.ca";
 const RESUME_URL =
-  "https://drive.google.com/file/d/1KHiqIUCb5earLVYsS0aJXyp2Wp4uO_QF/view?usp=sharing";
+  "/resume.pdf";
 const GITHUB_URL = "https://github.com/mcjuju888";
 const LINKEDIN_URL = "https://linkedin.com/in/jai-patel0325";
 
@@ -25,7 +25,7 @@ const jobs = [
     company: "Atelier",
     period: "May 2025 – Sept 2025 · Miami",
     description:
-      "AI-driven product analytics startup backed by Telora ($60K). Built an end-to-end ingestion pipeline and a LangChain-powered engine that turns analytics into deployable UI/UX changes.",
+      "AI-driven product analytics startup backed with $60K in funding. Built an end-to-end ingestion pipeline and a LangChain-powered engine that turns analytics into deployable UI/UX changes.",
     tags: ["Python", "AWS", "PostgreSQL", "LangChain"],
   },
   {
@@ -211,7 +211,7 @@ function ContactBlock() {
 function RecruiterBlock() {
   const highlights: [string, string][] = [
     ["$10K MRR", "founded Belvoro — production voice-AI SaaS, thousands of calls handled"],
-    ["$60K backed", "founding engineer @ Atelier (Telora-backed AI analytics startup)"],
+    ["$60K backed", "founding engineer @ Atelier ($60K-backed AI analytics startup)"],
     ["+500 users", "shipped as SWE intern @ ConnexU (AWS ECS, cut payloads 95%)"],
     ["4+ live products", "full-stack, AI/RAG, and embedded — shipped, not tutorials"],
   ];
